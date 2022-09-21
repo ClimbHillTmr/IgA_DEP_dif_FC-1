@@ -38,6 +38,6 @@ for i in nameList:
                         cutoff=0.5,
                         format='pdf' 
                     )
-    iga_GOBP.results.to_csv("/Users/cht/Documents/GitHub/IgA_DEP_dif_FC-1/result/result "
-                    +i+ ".csv"
+    iga_GOBP.results.to_csv("/Users/cht/Documents/GitHub/IgA_DEP_dif_FC-1/result/Result_+"
+                    +   i + "_.csv"
                     )
