@@ -24,13 +24,8 @@ filePath = r"/Users/cht/Documents/GitHub/IgA_DEP_dif_FC-1/IgA_DEP_dif_FC-1"  # �
 #获取文件夹下的所有文件名称
 nameList = os.listdir(filePath)
 
-#设置一个空数组用于存放数据
-a = []
 for i in nameList:
-    #使用pandas中的read_excel函数读取文件 我这里只读取一行数据
-    # nrows=n的含义为读取第n行数据(注意不是读取前n行数据)
-    temp = pd.read_excel(r"/Users/cht/Documents/GitHub/IgA_DEP_dif_FC-1/IgA_DEP_dif_FC-1/" + i)
-    #将读取到的数据进行格式转换（从dataframe格式转为数据，方便记进行拼接）
+
     temp1 = temp['geneName'].values.tolist()
     
     gene_sets=['KEGG_2021_Human','GO_Molecular_Function_2021']
